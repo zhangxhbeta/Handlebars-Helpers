@@ -54,7 +54,7 @@
         if ( ! isArray(right)) {
             right = right.split(',');
         }
-        return right.indexOf(left) !== -1;
+        return $.inArray(left, right) !== -1;
     });
 
     var isHelper = function() {
